@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LearnQuest — Upgraded!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <div class="mascot">🦉</div>
+      <div>
+        <h1>LearnQuest</h1>
+        <p class="sub">Upgraded Edition</p>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="awards-btn" id="awards-btn-header">🏆 Awards</div>
+      <div class="stars-wrap">
+        <div class="stars-icon">⭐</div>
+        <div class="stars-count" id="star-count">0</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="menu" class="screen">
+      <h2>Choose a mini-game</h2>
+      <div class="menu-grid">
+        <button class="card menu-btn" data-game="maze">
+          <div class="card-title">🤖 Logic Labyrinth</div>
+          <div class="card-desc">Program your way through a true maze.</div>
+        </button>
+        <button class="card menu-btn" data-game="language">
+          <div class="card-title">🎨 Language Match</div>
+          <div class="card-desc">Match words with emojis against time.</div>
+        </button>
+        <button class="card menu-btn" data-game="logic">
+          <div class="card-title">🧠 Logic Sequence</div>
+          <div class="card-desc">Guess the next number in the pattern.</div>
+        </button>
+        <button class="card menu-btn" data-game="arithmetic">
+          <div class="card-title">⏱️ Arithmetic Sprint</div>
+          <div class="card-desc">Solve math problems at high speed.</div>
+        </button>
+      </div>
+    </section>
+
+    <!-- Game Screens -->
+    <section id="maze" class="screen hidden">
+        <!-- Maze game will be dynamically generated here -->
+    </section>
+    <section id="language" class="screen hidden">
+        <!-- Language game will be dynamically generated here -->
+    </section>
+    <section id="logic" class="screen hidden">
+        <!-- Logic game will be dynamically generated here -->
+    </section>
+    <section id="arithmetic" class="screen hidden">
+        <!-- Arithmetic game will be dynamically generated here -->
+    </section>
+
+  </main>
+
+  <footer class="app-footer">Made with ❤️ — LearnQuest</footer>
+
+  <!-- Modals -->
+  <div id="difficulty-modal" class="modal-overlay hidden">
+    <div class="modal-content">
+      <h3 id="difficulty-title">Select Difficulty</h3>
+      <div class="difficulty-options">
+        <button class="difficulty-btn" data-difficulty="easy">
+          <span>Easy</span>
+          <span class="star-reward">⭐</span>
+        </button>
+        <button class="difficulty-btn" data-difficulty="medium">
+          <span>Medium</span>
+          <span class="star-reward">⭐⭐</span>
+        </button>
+        <button class="difficulty-btn" data-difficulty="hard">
+          <span>Hard</span>
+          <span class="star-reward">⭐⭐⭐</span>
+        </button>
+      </div>
+      <button id="close-difficulty-modal" class="small">Cancel</button>
+    </div>
+  </div>
+
+  <div id="awards-modal" class="modal-overlay hidden">
+    <div class="modal-content">
+      <h3 id="awards-title">Your Awards</h3>
+      <div id="awards-list"></div>
+      <div id="new-award-toast" class="hidden">
+        <h4>🏆 New Award Unlocked!</h4>
+        <p id="new-award-name"></p>
+        <small id="new-award-desc"></small>
+      </div>
+      <button id="close-awards-modal" class="small">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
