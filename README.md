@@ -1,1 +1,1 @@
-"#YouthCoders Code for Finance Hackaton" 
+YouthCoders Code for Finance Hackaton
