@@ -96,7 +96,7 @@ Please ensure your code adheres to the existing style and conventions.
 
 ## License Information
 
-No license specified. All rights reserved by Pixelneery.
+No license specified. All rights reserved by Pixelneer.
 
 ## Acknowledgments
 
