@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project, LearnQuest, was developed for the YouthCoders Code for Finance Hackathon. It aims to provide a fun and engaging way to learn high-value skills related to finance, presented in a Duolingo-like interface. The application uses gamification to make the learning process more enjoyable and effective.
+This project, LearnQuest, was developed for the YouthCoders Code for Finance Hackathon. It aims to provide a fun and engaging way to learn high-value skills related to finance, presented in a easy to understand interface. The application uses gamification to make the learning process more enjoyable and effective.
 
 ## Key Features & Benefits
 
