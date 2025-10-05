@@ -177,6 +177,13 @@ function initMaze(container) {
             block.textContent = p.replace('LOOP_START', 'L(x3)').replace('LOOP_END', 'End L');
             list.appendChild(block);
         });
+
+        // Add/remove scrollable class based on program length
+        if (program.length > 5) {
+            list.classList.add('scrollable');
+        } else {
+            list.classList.remove('scrollable');
+        }
     }
     
     container.querySelectorAll('.block-btn').forEach(b => {

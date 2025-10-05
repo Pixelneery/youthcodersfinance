@@ -93,8 +93,7 @@ button { font-family: inherit; font-size: 1rem; border: none; cursor: pointer; b
 .program-header { display: flex; justify-content: space-between; font-weight: 700; margin-bottom: 8px; font-size: 14px; }
 .program-list {
     display: flex;
-    flex-wrap: nowrap; /* Changed from wrap to nowrap */
-    overflow-x: auto; /* Added for horizontal scrolling */
+    flex-wrap: wrap; /* Default to wrap for 5 or less items */
     gap: 8px;
     align-items: center;
     padding: 8px;
@@ -102,6 +101,10 @@ button { font-family: inherit; font-size: 1rem; border: none; cursor: pointer; b
     background: white;
     min-height: 56px;
     border: 1px solid var(--border-color);
+}
+.program-list.scrollable {
+    flex-wrap: nowrap; /* Change to nowrap for scrolling */
+    overflow-x: auto;
 }
 /* Custom Scrollbar for Program List */
 .program-list::-webkit-scrollbar { height: 8px; }
@@ -154,4 +157,3 @@ button { font-family: inherit; font-size: 1rem; border: none; cursor: pointer; b
   .left-panel { width: 100%; }
 }
 .hidden { display: none; }
-
